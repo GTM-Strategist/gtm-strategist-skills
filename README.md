@@ -72,7 +72,7 @@ Skills activate automatically when you open Claude Code in this folder.
 ### Option 3: Claude Cowork (desktop app)
 
 1. Open the Claude Desktop app → switch to the **Cowork** tab
-2. Select the `gtm-strategist-skills` folder as your working directory
+2. Install the plugin: **Settings** → **Plugins** → **Add plugin** → paste `https://github.com/GTM-Strategist/gtm-strategist-skills`
 3. The 12 GTM skills activate automatically
 
 ### Option 4: Claude.ai (web chat)
