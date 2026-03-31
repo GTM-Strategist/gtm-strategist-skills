@@ -5,6 +5,20 @@
   "author": {
     "name": "Maja Voje"
   },
+  "homepage": "https://gtmstrategist.com",
   "repository": "https://github.com/GTM-Strategist/gtm-strategist-skills",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "gtm",
+    "go-to-market",
+    "strategy",
+    "marketing",
+    "positioning",
+    "pricing",
+    "launch",
+    "sales",
+    "startup",
+    "growth"
+  ],
+  "skills": "./skills/"
 }

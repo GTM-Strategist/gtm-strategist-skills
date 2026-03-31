@@ -41,98 +41,61 @@ Work through them in order (recommended) or jump to what you need right now.
 
 ---
 
-## Quick Start
+## Install
 
-### Step 1: Download the skills
+### Option 1: Claude Code Plugin (recommended)
 
-**Option A — Git clone** (if you have Git):
+Install directly from your terminal — no cloning or downloading needed:
+
 ```bash
-git clone https://github.com/GTM-Strategist/gtm-strategist-skills.git
-cd gtm-strategist-skills
+claude plugin install GTM-Strategist/gtm-strategist-skills
 ```
 
-**Option B — Download ZIP:**
-Click the green **Code** button on GitHub → **Download ZIP** → extract to a folder.
+This installs the 12 GTM skills as a plugin. They'll be available in every Claude Code session.
 
----
+To install for the current project only:
 
-### Step 2: Pick how you'll use them
-
-<details>
-<summary><strong>Claude Code (terminal)</strong></summary>
-
-Claude Code is Anthropic's AI assistant that runs in your terminal. Skills auto-activate, outputs save as files, and context persists across sessions.
-
-**What you need:**
-- A terminal (Terminal on Mac, Git Bash or PowerShell on Windows)
-- A Claude subscription (Pro, Max, or Team) **OR** an [Anthropic API key](https://console.anthropic.com/)
-
-**Install Claude Code:** Follow the [getting started guide](https://docs.anthropic.com/en/docs/claude-code/getting-started).
-
-**Then:**
 ```bash
+claude plugin install GTM-Strategist/gtm-strategist-skills --scope project
+```
+
+### Option 2: Clone and use directly
+
+```bash
+git clone https://github.com/GTM-Strategist/gtm-strategist-skills.git
 cd gtm-strategist-skills
 claude
 ```
 
-That's it. Start talking.
+Skills activate automatically when you open Claude Code in this folder.
 
-</details>
+### Option 3: Claude Cowork (desktop app)
 
-<details>
-<summary><strong>Claude Cowork (desktop app)</strong></summary>
-
-Claude Cowork is Anthropic's desktop agent that runs multi-step tasks on your computer. This repo includes a plugin manifest so you can install the skills directly.
-
-**What you need:**
-- Claude Desktop app with Cowork enabled (any paid Claude plan)
-
-**Setup:**
 1. Open the Claude Desktop app → switch to the **Cowork** tab
-2. Select the downloaded `gtm-strategist-skills` folder as your working directory (click the folder name dropdown at the top → **Choose a different folder** → select the unzipped folder)
-3. The 12 GTM skills will activate automatically
+2. Select the `gtm-strategist-skills` folder as your working directory
+3. The 12 GTM skills activate automatically
 
-Once set up, just ask Claude for what you need — *"help me with positioning"*, *"I need a pricing strategy"* — and the right skill activates.
+### Option 4: Claude.ai (web chat)
 
-> **Tip:** The `.claude` folder (which contains the skills) is hidden by default on macOS and Windows. You don't need to see it — just select the main folder and everything works.
+1. Go to [claude.ai](https://claude.ai) → **Projects** → **Create a new project**
+2. Upload `CLAUDE.md` and `my-gtm-context.md`
+3. Upload the skill files you want from `skills/` — each phase has a `SKILL.md` file (e.g., `skills/gtm-foundations/SKILL.md`)
 
-</details>
-
-<details>
-<summary><strong>Claude.ai (web chat)</strong></summary>
-
-You can use these skills directly in Claude's web interface using Projects. No terminal or desktop app needed.
-
-**What you need:**
-- A Claude account at [claude.ai](https://claude.ai) (Pro, Max, or Team)
-
-**Setup:**
-1. Go to [claude.ai](https://claude.ai) → click **Projects** in the sidebar → **Create a new project**
-2. Open the project → click **Add content** in the project knowledge section
-3. Upload `CLAUDE.md` and `my-gtm-context.md` from the downloaded folder
-4. Upload the skill files you want to use from `.claude/skills/` — each phase has its own folder with a `SKILL.md` file inside (e.g., `.claude/skills/gtm-foundations/SKILL.md`)
-
-> **Tip:** The `.claude` folder is hidden by default. On Mac, press `Cmd + Shift + .` in Finder to show hidden files. On Windows, click **View** → **Show** → **Hidden items** in File Explorer.
-
-Start a conversation inside the project and ask for what you need. Claude will use the skills and your product context automatically.
-
-**Note:** Unlike Claude Code and Cowork, outputs won't auto-save as files — copy them from the chat when you're done.
-
-</details>
+> **Note:** Unlike Claude Code and Cowork, outputs won't auto-save as files — copy them from the chat.
 
 ---
 
-### Step 3: Set up your product context
+## Set Up Your Product Context
 
-**Easy way (recommended):** Just start talking. Tell Claude about your product, market, and goals. It will interview you about what it needs and save the context for you.
+**Easy way (recommended):** Just start talking. Tell Claude about your product, market, and goals. It will interview you and save the context automatically.
 
 Try: *"I want to set up my GTM context. Let me tell you about my product."*
 
-**Manual way:** Open `my-gtm-context.md` in any text editor and fill in the sections. You don't need to complete everything — the skills will ask for anything that's missing.
+**Manual way:** Open `my-gtm-context.md` and fill in the sections. You don't need to complete everything — the skills will ask for anything that's missing.
 
 ---
 
-### Step 4: Start working
+## Start Working
 
 Tell Claude what you need in plain language:
 
@@ -190,7 +153,7 @@ The methodology is designed for a 90-day GTM timeline. With Claude's help, you c
 Perfect. Tell Claude what you've already done (or fill in the "Prior Work" section of `my-gtm-context.md`) and jump to whatever phase you need.
 
 **Can I customize the skills?**
-Absolutely. The skills are just markdown files in `.claude/skills/`. Edit them to match your workflow or methodology.
+Absolutely. The skills are markdown files in `skills/`. Edit them to match your workflow or methodology.
 
 ---
 
@@ -209,4 +172,3 @@ These skills are based on the **GTM Strategist methodology** by [Maja Voje](http
 ## License
 
 MIT — use freely, modify as needed.
-
