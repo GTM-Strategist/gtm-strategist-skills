@@ -51,7 +51,7 @@ git clone https://github.com/GTM-Strategist/gtm-strategist-skills.git
 cd gtm-strategist-skills
 ```
 
-**Option B — Download ZIP:**
+**Option B — Download ZIP**:
 Click the green **Code** button on GitHub → **Download ZIP** → extract to a folder.
 
 ---
