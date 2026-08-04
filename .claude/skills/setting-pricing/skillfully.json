@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "skill_id": "sk_dhymfxh5yt",
+  "source": {
+    "provider": "github",
+    "repository": "GTM-Strategist/gtm-strategist-skills",
+    "path": ".claude/skills/setting-pricing"
+  }
+}
