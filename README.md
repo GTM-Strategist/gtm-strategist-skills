@@ -190,7 +190,7 @@ The methodology is designed for a 90-day GTM timeline. With Claude's help, you c
 Perfect. Tell Claude what you've already done (or fill in the "Prior Work" section of `my-gtm-context.md`) and jump to whatever phase you need.
 
 **Can I customize the skills?**
-Absolutely. The skills are just markdown files in `.claude/skills/`. Edit them to match your workflow or methodology.
+Absolutely. The skills are just markdown (md) files in `.claude/skills/`. Edit them to match your workflow or methodology.
 
 ---
 
